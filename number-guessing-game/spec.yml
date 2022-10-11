@@ -1,0 +1,22 @@
+name: Number Guessing Game
+tags: ['HTML/CSS', 'JavaScript']
+starter-files: https://github.com/raikiran07/html-playground-starter
+type: frontend
+level: medium
+cover-image: https://raw.githubusercontent.com/raikiran07/html-playground-starter/master/asset/gussingright.png
+short-description: A simple but effective number guessing game using hmtl, css and js
+long-description: |
+    In this project, you're supposed to build a fully functional number guessing game using frontend technologies. This includes the following features:
+
+    - buiding the UI for the user
+    - Handling user input
+    - Changing the content of an element dynamically using javascript
+    - Reset functionality
+    
+
+codedamn:
+    helper-learning-path: frontend
+    show-community-banner: true
+    playground-layout: terminal-editor-browser
+    playground-image: html
+    guided: true

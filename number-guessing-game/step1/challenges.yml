@@ -1,0 +1,11 @@
+
+name: 'writing html for the UI'
+stepId: step1
+stepBreakDown:
+    - text: 'create a container div with max width 60% and margin 2px auto to align it in center, add border to see the size of the container'
+    - text: ' Inside container div create a h2 tag saying `Guess Number from 1-10`'
+    - text: 'Create an input filed with placeholder `Enter your guess` and give id = `user-input`'
+    - text: 'Create a submit button with class=`btn` and id=`submit-btn`'
+    - text: 'Create a reset button with class=`btn` and id=`reset-btn`'
+    - text: create a span tag with id="status" with no content, so that we can add content dynamically using javascript.
+   

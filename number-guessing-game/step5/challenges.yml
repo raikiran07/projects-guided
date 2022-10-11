@@ -1,0 +1,11 @@
+
+name: 'implementing reset functionality'
+stepId: step5
+stepBreakDown:
+    - text: 'generate a new random number'
+    - text: 'clear the input field using null as a value'
+    - text: 'clear the status field'
+  
+    
+   
+   

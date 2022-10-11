@@ -1,0 +1,8 @@
+
+name: 'Creating the UI for the game'
+stepId: step0
+stepBreakDown:
+    - text: 'Create a navbar with nav tag'
+    - text: 'create a h1 tag that says `Number Gussing Game` inside the navbar'
+    - text: 'Style the navbar implementing css of your choice.'
+   

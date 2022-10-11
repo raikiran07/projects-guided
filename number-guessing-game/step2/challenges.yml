@@ -1,0 +1,9 @@
+
+name: 'Grabing the required html elements using javascript'
+stepId: step2
+stepBreakDown:
+    - text: 'Have to store the user input  using javascript'
+    - text: 'access the html elements - input field, submit btn, reset btn and span tag using javascript '
+    - text: 'use document.getElementById(`id-name`) to access each element'
+   
+   
