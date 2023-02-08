@@ -1,0 +1,49 @@
+name: Validate Project Specifications
+
+on: [push]
+
+jobs:
+    validate-projects:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-node@v3
+
+            - name: Install Packages
+              run: yarn install --frozen-lockfile
+
+            - name: Build Validation File
+              run: yarn tsc
+
+            - name: Run Validation
+              run: |
+                  node build/index.js
+                  echo $?
+                  echo "EXIT CODE ABOVE"
+
+            - name: Validation succeeded
+              if: ${{ success() }}
+              uses: actions/github-script@v5
+              with:
+                  script: |
+                      const { data } = await github.rest.repos.listPullRequestsAssociatedWithCommit({
+                          owner: context.repo.owner,
+                          repo: context.repo.repo,
+                          commit_sha: context.payload.after
+                      })
+                      if (data) {
+                        if(data[0]) {
+                          const { number: issue_number } = data[0]
+
+                          await github.rest.issues.createComment({
+                              issue_number,
+                              owner: context.repo.owner,
+                              repo: context.repo.repo,
+                              body: `#### 🟢  Validation succeeded`
+                          })
+                        } else {
+                          console.log(`Validation  succeeded`)
+                        }
+                      } else {
+                        throw new Error("Joi validation failed!")
+                      }
