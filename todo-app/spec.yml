@@ -3,7 +3,7 @@ tags: ["HTML/CSS","JavaScript"]
 starter-files: https://github.com/codedamn-projects/todo-app
 type: frontend
 level: easy
-cover-image: https://raw.githubusercontent.com/codedamn-projects/todo-app/main/assets/desktop-design.jpg 
+cover-image: https://raw.githubusercontent.com/codedamn-projects/todo-app/main/designs/Home%20%5BDesktop%5D.jpg 
 short-description: Build a Todo App clone using the assets we provide and test your HTML, CSS and JavaScript skills 
 long-description: |
   Your challenge is to build out a Todo App clone & get it looking as close to the design as possible.
